@@ -1,0 +1,22 @@
+Console.WriteLine("Lecc 16 - Act2 - Inciso1");
+Console.WriteLine("Sofia Arana - Clave 4");
+
+//Arreglo - Inicializa
+int[] edadPersona = new int[7];
+int cantidadPersonasMayores = 0;
+
+for (int i = 0; i < edadPersona.Length; i++)
+{
+    Console.WriteLine("Ingrese la edad " +(i+1)+":");
+    edadPersona[i]=Convert.ToInt32(Console.ReadLine());
+    if (edadPersona[i]>=18)
+        cantidadPersonasMayores++;  
+}
+
+//Mostrar los datos del arreglo
+Console.Clear();
+for (int i = 0; i < edadPersona.Length; i++)
+{
+    Console.Write(edadPersona[i] + "-");
+}
+Console.WriteLine("La cantidad de personas mayores son:" + cantidadPersonasMayores);
